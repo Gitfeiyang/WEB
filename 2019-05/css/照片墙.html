@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爱人照片墙.html</title>   
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		ul{
+			width: 100%;
+			height: 400px;
+			background-color: skyblue;
+			margin: 100px auto;
+			text-align: center;
+		}
+		ul:hover li{
+			opacity: 0.5;
+		}
+		ul li:hover{
+			opacity: 1;
+			transform: rotate(0deg) scale(1.5, 1.5);
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		li{
+			display: inline-block;
+			width: 200px;
+			height: 260px;
+			margin-top: 65px;
+			margin-right: 10px;
+			border: 5px solid #fff;
+			border-radius: 5px;
+			transition: all 1s;
+		}
+		li:nth-child(1){
+			transform: rotate(30deg);
+		}
+		li:nth-child(2){
+			transform: rotate(15deg);
+		}
+		li:nth-child(3){
+			transform: rotate(-10deg);
+		}
+		li:nth-child(4){
+			transform: rotate(-20deg);
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><img src="img/8.jpg" alt=""></li>
+		<li><img src="img/7.jpg" alt=""></li>
+		<li><img src="img/9.jpg" alt=""></li>
+		<li><img src="img/10.jpg" alt=""></li>
+	</ul>
+</body>
+</html>

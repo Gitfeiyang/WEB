@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>优先级</title>
+	<style>
+		/*
+		1.谁的ID多听谁的
+		2.ID一样多是谁的类多听谁的
+		3.ID和类一样多谁的标签多听谁的
+		4.都一样多就近原则听最后的
+		/*
+		/* #ul #li #p{
+			color: orange;
+		}
+		#ul #p .li{
+			color: red;
+		}
+		#li #ul .p{
+			color: blue;
+		} */
+		/* #p .ul{
+			color: red;
+		}
+		.p .ul.li{
+			color: orange;
+		}
+		#ul #li{
+			color: blue;
+		} */
+	</style>
+</head>
+<body>
+	<ul class="ul" id="ul">
+		<li class="li" id="li">
+			<p class="p" id="p">
+				猜猜我的颜色
+			</p>
+		</li>
+	</ul>
+</body>
+</html>

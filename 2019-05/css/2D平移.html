@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2D平移</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+			ul{
+				width: 600px;
+				border: 1px solid #000;
+				margin: 100px auto;
+			}
+			li{
+				width: 200px;
+				height: 100px;
+				background-color: red;
+				margin: 200px auto;
+			}
+			li:nth-child(1){
+				transform: translate(50px, 50px);
+				background-color: blue;
+			}
+			li:nth-child(2){
+				transform: translate(-50px, -50px);
+				background-color: skyblue;
+			}
+			li:nth-child(3){
+				transform: translate(150px, 150px);
+				background-color: skyblue;
+			}
+	</style>
+</head>
+<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+</body>
+</html>

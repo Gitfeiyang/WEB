@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定定位.html</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				height: 2000px;			}
+		.father{
+			width: 500px;
+			height: 500px;
+			background-color: red;
+			margin: 20px auto;
+		}
+		.son{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			position: fixed;
+			left: 50%;
+			margin-left: -100px ;
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+			position: static;
+		}
+		</style>
+</head>
+<body>
+		<div class="father">
+			<div class="son"></div>
+		
+		</div>
+			<div class="box"></div>
+</body>
+</html>

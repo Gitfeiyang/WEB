@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2D修改旋转轴.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		ul{
+			width: 800px;
+			border: 1px solid #000;
+			margin: 100px auto;
+			perspective: 600px;
+		}
+		li{
+			width: 400px;
+			height: 500px;
+/* 			background-color: red; */
+			margin: 50px auto;
+		}
+		li:nth-child(1){
+			transform: rotateX(20deg);
+		}
+		li:nth-child(2){
+			transform: rotateY(20deg);
+		}
+		li:nth-child(3){
+			transform: rotateZ(20deg);
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><img src="img/手风琴1.jpg" alt=""></li>
+		<li><img src="img/手风琴2.jpg" alt=""></li>
+		<li><img src="img/手风琴3.jpg" alt=""></li>
+	</ul>
+</body>
+</html>

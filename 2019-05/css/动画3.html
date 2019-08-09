@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画3</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.son{
+		width: 100px;
+		height: 100px;
+		margin: 100px auto;
+		background-color: red;
+		animation:sprot 3s linear;
+		animation-fill-mode:forwards;
+		}
+		@keyframes sprot{
+			0%{
+				transform: rotate(10deg);
+			}
+			25%{
+				transform: rotate(25deg);
+			}
+			50%{
+				transform: rotate(50deg);
+			}
+			75%{
+				transform: rotate(70deg);
+			}
+			100%{
+				transform: rotate(100deg);
+			}
+		}
+	</style>
+</head>
+<body>
+		<div class="son"></div>
+</body>
+</html>

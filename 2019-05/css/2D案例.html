@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2D案例.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 400px;
+			height: 600px;
+			border: 1px solid #000;
+			margin: 50px auto;
+			border-radius: 8px;
+			perspective: 500px;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			transform-origin: center bottom;
+		}
+		.box:hover img{
+			transform: rotateX(90deg);
+			transition-duration:  1s; 
+		}
+	</style>
+</head>
+<body>
+	<div class="box"><img src="img/7.jpg" alt=""></div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>单页滚动过度页面.html</title>
+	<link rel="stylesheet" href="css/all.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		input,a{
+			width: 20%;
+			height: 34px;
+			position: fixed;
+			top: 0;
+			text-align: center;
+			line-height: 34px;
+		}
+		.crt1,.crt1+a{
+		left: 0%;
+		}
+		.crt2,.crt2+a{
+		left: 20%;
+		}
+		.crt3,.crt3+a{
+		left: 40%;
+		}
+		.crt4,.crt4+a{
+		left: 60%;
+		}
+		.crt5,.crt5+a{
+		left: 80%;
+		}
+		input{
+			z-index: 9;
+			opacity: 0;
+		}
+		input:checked+a{
+			color: red;
+		}
+		input+a{
+			font-size: 26px;
+			color: white;
+			background-color: rgb(0, 0, 0,0.7)
+		}
+		html,body{
+			height: 100%;
+		}
+		.ym{
+			height: 100%;
+		}
+		.page{
+			padding-top: 34px;
+			height: 100%;
+			box-sizing: border-box;
+		}
+		.pages{
+			height: 100%;
+		}
+		.ym>input:hover+a{
+			background-color: rgba(0, 0, 0, 0.9)
+		}
+	</style>
+</head>
+<body>
+	<div class="ym">
+		<input type="radio" name="nav"  class="crt1" checked>
+		<a href="javascript:;"><i class="fas fa-home">Home</i>
+		</a>
+		<input type="radio" name="nav" class="crt2">
+		<a href="javascript:;"><i class="fas fa-coffee">Sevice</i>
+		</a>
+		<input type="radio" name="nav" class="crt3">
+		<a href="javascript:;"><i class="fas fa-bulid">About </i>
+		</a>
+		<input type="radio" name="nav" class="crt4">
+		<a href="javascript:;"><i class="fas fa-users">Team</i>
+		</a>
+		<input type="radio" name="nav" class="crt5">
+		<a href="javascript:;"><i class="fas fa-phone">Contact</i></a>
+	</div>
+	<div class="page">
+		<div class="page1 pages">1</div>
+		<div class="page2 pages">2</div>
+		<div class="page3 pages">3</div>
+		<div class="page4 pages">4</div>
+		<div class="page5 pages">5</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒模型居中2</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.father{
+				width: 500px;
+				height: 500px;
+				background-color: red;
+				border: 1px solid #000;
+				padding-top: 175px;
+				padding-bottom: 175px;
+				padding-right: 175px;
+				padding-left: 175px;
+				box-sizing: border-box;
+			}
+			.son{
+				width: 150px;
+				height: 150px;
+				background-color: blue;
+				/* margin-bottom: 175px;
+				margin-top: 175px; */
+				margin:0 auto;
+			}
+		</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

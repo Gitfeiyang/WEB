@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒模型margin.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.father1{
+			overflow: hidden;
+		}
+	
+		.father2{
+			overflow: hidden;
+		}
+		.son1{
+			background-color: #0ff;
+			margin-top: 100px;
+			width: 200px;
+			height: 200px;
+		}
+		.son2{
+			margin-top: 100px;
+			width: 200px;
+			height: 200px;
+			background-color: red;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="father1">
+		<div class="son1"></div>
+    </div>
+    <div class="father2">
+    	<div class="son2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container{
+	width: 1226px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.top ul li{
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+	color: #b0b0b0;
+}
+.sep{
+	color: #393d42;
+	left: 5px;
+	right: 5px;
+}
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom: 1;
+}

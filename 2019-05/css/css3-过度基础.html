@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3-过度基础.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			/* transition-property: width,height;
+			transition-duration: 1s; 
+			transition-delay: 0.5s; */
+			transition-timing-function: cubic-bezier(20,10,20,30);
+			transition: all 2s;
+		}
+		div:hover{
+			height: 200px;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

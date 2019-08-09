@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js外部使用</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			margin: 100px auto;
+			background-color: red;
+		}
+	</style>
+	<script src="js/01.js"></script>
+</head>
+<body>
+	<div onmouseover="tobig()" onmouseout="tosmall()"; id="box">
+	</div>
+	<!-- <div onmouseover="this.style.width='300px'" onmouseout="this.style.height='200px'"; id="box">	
+		 </div> -->
+</body>
+</html>

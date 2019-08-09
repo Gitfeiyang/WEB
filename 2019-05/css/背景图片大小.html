@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景图片大小</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			background-image: url('https://t11.baidu.com/it/u=3778887280,838331576&fm=173&app=25&f=JPEG?w=218&h=146&s=AF43F04E5E7A061785DC7C9503001088');
+			background-repeat: no-repeat;
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			margin: 0 auto;
+			list-style-type: none;
+		}
+			li:nth-child(1){
+			background-size: 100px;
+			}
+			li:nth-child(2){
+			background-size: contain;
+			}
+			li:nth-child(3){
+			background-size: cover;
+			}
+			li:nth-child(4){
+			background-size: 100px;
+			}
+			li:nth-child(5){
+			background-size: 100px;
+			}
+			
+	</style>
+</head>
+<body>
+	<div><ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>抽取共同样式</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			margin: 100px auto;
+			background-color: red;
+		}
+	</style>
+	<script>
+	function tobig(){
+		document.getElementById('box').style.backgroundColor='blue';
+	}
+	function tosmall(){
+		document.getElementById('box').style.backgroundColor='red';
+	}
+	</script>
+</head>
+<body>
+	<div onmouseover="tobig()" onmouseout="tosmall()"; id="box">
+		
+	</div>
+	<!-- <div onmouseover="this.style.width='300px'" onmouseout="this.style.height='200px'"; id="box">
+		
+	</div> -->
+</body>
+</html>

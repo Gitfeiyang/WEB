@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.father1{
+			background-color: red;
+		}
+		.father1 p{                                                      
+			width: 100px;
+			height: 30px;
+			background-color: green;
+		}
+		.wall{
+			clear: both;
+		}
+		.father2{
+			background-color: purple;
+		}
+		.father2 p{
+			width: 100px;
+			height: 30px;
+			background-color: pink;
+		}
+		
+	</style>
+</head>
+<body>
+	   <div class="father1">
+	   	<p>p1</p>
+	   	<p>p2</p>
+	   	<p>p3</p>
+	   </div>
+	   <div class="wall"></div>
+	   <div class="father2">
+	   	<p>p01</p>
+	   	<p>p02</p>
+	   	<p>p03</p>
+	   </div>
+</body>
+</html>
