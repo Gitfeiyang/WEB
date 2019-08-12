@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>求和</title>
+</head>
+<body>
+	<input type="text" id="text1">+
+	<input type="text" id="text2">
+	<input type="button" value="求和" id="he">
+
+</body>
+<script>
+	/*注意检查做一步在浏览器检查一步*/
+	var otext=document.getElementById('he')
+	otext.onclick=function(){
+		// console.log(otext)
+		var otext1=document.getElementById('text1');
+		var otext2=document.getElementById('text2');
+		var val1=parseInt(otext1.value);
+		var val2=parseInt(otext2.value);
+		alert(val1+val2);
+	}
+
+</script>
+</html>
