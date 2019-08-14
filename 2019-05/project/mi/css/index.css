@@ -1,4 +1,4 @@
-/* top开始 */
+ /* top开始 */
     	.top{
 		height: 34px;
 		background-color: #333333;
@@ -312,6 +312,7 @@
 	.main .sj-left img:hover{
 		transform: translateY(-3px);
 		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+		transition-delay: 0.1s;
 	}
 	.main .sj-right{
 		width: 978px;
@@ -465,8 +466,6 @@
 		margin-left:130px;
 		position: relative;
 	}
-	.main .jd-list-item p{
-	}
 	.main .jd-list-item .jd-item-jg{
 		margin-bottom: 50px;
 		color: #ff6700;
@@ -578,4 +577,8 @@
 	.footer .fw-right .gz{
 		font-size: 12px;
 		text-align: center;
+	}
+	.footer .fw-list .fw-itme{
+		padding-top: 20px;
+		font-size: 12px;
 	}
