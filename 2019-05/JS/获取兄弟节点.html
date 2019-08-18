@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取兄弟节点</title>
+	<ul id="ul1">
+		<li>1</li>
+		<li>2</li>
+		<li id="li3">3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+</head>
+<body>
+	
+</body>
+<script>
+	var oUl = document.getElementById('ul1')
+	var oLi3 = document.getElementById('li3')
+	//console.log(li3)
+	console.log(oLi3.nextSibling == oUl.childNodes[6])
+	console.log(oLi3.previousSibling == oUl.childNodes[4])
+	console.log(oUl.childNodes[4].nextSibling)
+	console.log(oUl.childNodes[4].previousSibling)
+</script>
+</html>

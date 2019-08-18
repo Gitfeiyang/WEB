@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>排序数组</title>
+	<script>
+		// var arr = [2,5,1,4,6,3]
+		// console.log(arr.sort())
+		//2,5,1,4,6,3
+		//1,5,2,4,6,3
+		//1,2,5,4,6,3
+		//1,2,3,5,6,4
+		//1,2,3,4,6,5
+		//1,2,3,4,5,6
+		var arr = [12,25,14,24,16,13]
+		// console.log(arr.sort())
+		//12,25,14,24,16,13
+		//12,14,25,24,16,13
+		//12,13,25,24,16,14
+		//12,13,14,25,16,24
+		//12,13,14,16,25,24
+		//12,13,14,16,24,25
+		for (var j = 0; j < arr.length; j++) {
+		var tmp = 0;
+		for (var i = j+1; i < arr.length; i++) {
+			if (arr[j]>arr[i]){
+				tmp = arr[j]
+				arr[j] = arr[i]
+				arr[i] = tmp;
+				}
+			}
+		}	console.log(arr)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

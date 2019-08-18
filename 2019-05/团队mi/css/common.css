@@ -1,0 +1,15 @@
+.container{
+	width: 1226px;
+	height: 492px;
+}
+a{
+	text-decoration: none; 
+	font-size: 20px;
+		color: #f55e67;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+

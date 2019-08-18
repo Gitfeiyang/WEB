@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取子节点
+	</title>
+</head>
+<body>
+	<ul id="u1">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+</body>
+<script>
+	var oUl = document.getElementById('u1')
+	var aEle = oUl.childNodes;
+	var aLi = oUl.children;
+	var firstNode = oUl.firstChild;
+	var lastNode = oUl.lastElementChild;
+	console.log(firstNode)
+	console.log(lastNode)
+</script>
+</html>

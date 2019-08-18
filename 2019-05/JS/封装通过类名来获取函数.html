@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>封装通过类名</title>
+
+</head>
+<body>
+	<ul id="ul1">
+		<li>1</li>
+		<li class="box">2</li>
+		<li>3</li>
+		<li class="box">4</li>
+		<li>5</li>
+		<li class="box">6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+	<div id="box1">
+		<div class="box">1</div>
+		<div>2</div>
+		<div class="box">3</div>
+		<div>4</div>
+		<div class="box">5</div>
+		<div>6</div>
+	</div>
+</body>
+<script>
+	function getElementsByClass(aParent,oClass){
+		var aEle = aParent.children;
+		var result = [];
+		for (var i = 0; i < aEle.length; i++) {
+			if (aEle[i].className == oClass){
+				// console.log('aaa')
+				result.push(aEle[i])
+			}
+		}
+		// console.log(result)
+		return result;
+	}
+	var oUl = document.getElementById('ul1');
+	var oBoxs = getElementsByClass(oUl,'box');
+	// var oBox1s = getElementsByClass(oUl,'boxs');
+	console.log(oBoxs)
+	var oDiv = document.getElementById('box1')
+	var oDivs = getElementsByClass(oDiv,'box')
+	console.log(oBoxs)
+</script>
+</html>

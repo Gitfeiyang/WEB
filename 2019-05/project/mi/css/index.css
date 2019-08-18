@@ -1,4 +1,4 @@
- /* top开始 */
+  /* top开始 */
     	.top{
 		height: 34px;
 		background-color: #333333;
@@ -69,7 +69,7 @@
 		font-size: 15px;
 	}	
 	.header .title-list a:hover{
-		color: #ff6700;
+		background-color: #ff6700;
 	}
 	.header .logo{
 		width: 55px;
@@ -87,52 +87,32 @@
 		border-left: none;
 		position: relative;
 	}
-	.header .txt .search-hot{
-		position: absolute;
-		bottom: 25px;
-		color: #757575;
-	}
-	.header .txt .search-hot .search-hot1 a:hover{
-		color: #ff6700;
-	}
-	.header .txt .search-hot .search-hot2 a:hover{
-		color: #ff6700;
-	}
-	.header .txt .search-hot .search-hot1{
-		width: 41px;
-		height: 18px;
-		font-size: 12px;
-		float: left;
-		margin-left: 120px;
-		background-color: #eee;
-	}
-	.header .txt .search-hot .search-hot2{
-		width: 55px;
-		height: 18px;
-		font-size: 12px;
-		float: left;
-		background-color: #eee;
-	}
-	div .txt:hover{
-		color: #ff6700;
-	}
-	.header .txt input{
+	.header .search{
+		width: 295px;
 		height: 50px;
-		width: 245px;
-		outline: none;
-		border: 1px solid #ff6700;
-		box-sizing: border-box;
+		float: right;
+		margin-top: 30px;
 	}
-	.header .txt  i .iconfont{
-		text-align: center;
-		padding-right: 5px;
-	}
-	.txt .search-list{
+	.header .search input{
 		width: 243px;
-		height: 300px;
-		border: 1px solid #ff6700;
-		z-index: 20;
-		position: absolute;
+		height: 50px;
+		outline: none;
+		border: 1px solid #ececec;
+		box-sizing: border-box;
+		border-right: none;
+		float: left;
+		padding-left: 10px;
+	}
+	.header .search>span{
+		float: left;
+		border: 1px solid #ececec;
+		width: 52px;
+		height: 50px;
+		font-size: 24px;
+		color: #616161;
+		box-sizing: border-box;
+		line-height: 50px;
+		text-align: center;
 	}
 /* header结束 */
 /* home开始 */

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数作用域</title>
+	<script>
+		function fn1() {
+		if (true) {
+			var a =3;
+		}
+		console.log(a)
+		for (var i = 0; i < 5; i++) {
+
+		}
+		console.log(i);
+		function fn2(){
+			console.log(i)
+		}
+	}
+	fn1()
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
