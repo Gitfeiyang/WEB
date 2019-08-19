@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>同步异步</title>
+</head>
+<body>
+	<input type="button" value="按钮" id="btn">
+</body>
+<script>
+	var oBtn = document.getElementById('btn')//1
+	var i = 0;//2
+	oBtn.onclick = function(){//5
+		i++
+		console.log(i)
+	}
+	setTimeout(function(){//4
+		console.log(i)
+	},2000)
+	i++//3
+</script>
+</html>

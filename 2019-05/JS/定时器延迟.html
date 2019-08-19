@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定时器延迟</title>
+</head>
+<body>
+	
+</body>
+<script>
+	function sayHi(){
+		console.log('hi...');
+	}
+	setTimeout('console.log("aa")',4000)
+	setTimeout(sayHi,5000)
+	setTimeout('undefined'6000)
+	var timer = setTimeout(function(){
+		console.log('aaa')
+		},3000)
+	console.log('timer',timer)
+</script>
+</html>

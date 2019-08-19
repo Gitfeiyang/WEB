@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>history对象</title>
+</head>
+<body>
+	<a href="https:www.baidu.com">百度</a>
+	<a href="https:www.kuazhu.com">跨猪</a>
+	<input type="button" id="btn" value="前进">
+	<input type="button" id="btn1" value="后退">
+</body>
+<script>
+	var oBtn = document.getElementById('btn')
+	var oBtn1 = document.getElementById('btn1')
+	oBtn.onclick=function(){
+		history.forward(1)
+
+	}
+	oBtn1.onclick=function(){
+		history.back(-1)
+	
+	}
+</script>
+</html>

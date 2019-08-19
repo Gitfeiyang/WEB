@@ -1,4 +1,4 @@
-/* top开始 */
+/* top开始 */ 
 	.top{
 		 height: 620px;
 		 width: 100%;
@@ -117,12 +117,63 @@
 /* header结束 */
 /* hand开始 */
 	.hand{
-		height: 2157px;
+		height: 2000px;
 		background-color: pink;
 	}
 	.hand img{
 		width: 1920px;
 		height: 202px;
+	}
+	.hand .xjzb-1 {
+		width: 1226px;
+		height: 433px;
+	}
+	.hand .xjzb-js{
+		width: 372px;
+		height: 433px;
+		border-left: 1px solid #ccc;
+		float: right;
+		background-color: #fff;
+		margin-top: -433px;
+		margin-right: -339px;
+	}
+	.hand .xjzb-1 img{
+		width: 854px;
+		height: 433px;
+		margin-left: 339px;
+	}
+	.hand p{
+		color: #222423;
+		font-size: 23px;
+		margin-top:113px;
+		margin-left: 42px;
+	}
+	.hand .sjjs-p2{
+		font-size: 22px;
+		color: #f55e67;
+		margin-top: 45px;
+		margin-left: 42px;
+	}
+	.hand .sjjs-p2 del{
+		font-size: 12px;
+		color: #5a636a;
+		margin-left: 10px;
+	}
+	.hand .sjjs-p1{
+		margin-left: 42px;
+		font-size: 13px;
+		color: #5f5965;
+		margin-top: -100px;
+		}
+	.hand .button{
+		width: 160px;
+		height: 44px;
+		color: #fff;
+		background-color: #eb625c;
+		text-align: center;
+		line-height: 44px;
+		margin-left: 42px;
+		margin-top: 15px;
 	}
 /* hand结束*/
 /* body开始 */

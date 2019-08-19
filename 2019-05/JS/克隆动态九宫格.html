@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>克隆动态九宫格</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			position: relative;
+		}
+		.son{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			top: 0px;
+			left: 0px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" id="btn" value="生成">
+	<div id="box">
+		<div class="son"></div>
+	</div>
+</body>
+<script>
+	var oBtn = document.getElementById('btn')
+	var aDiv = document.getElementsByClassName('son')
+	var oBox = document.getElementById('box')
+	var iHeight = 100;
+	var iWidth = 100;
+	var iMargin = 15;
+	var allCol=6;
+	oBtn.onclick=function(){
+		var oDiv = aDiv[0].cloneNode();
+		oBox.appendChild(oDiv)
+		for(var i=0;i<aDiv.length;i++){
+			var iRow = parseInt(i / allCol);
+			var iCol = (i %allCol);
+			aDiv[i].style.top = iRow * (iHeight + iMargin) +'px';
+			aDiv[i].style.left = iCol * (iWidth + iMargin) +'px';
+		}
+	}
+</script>
+</html>
